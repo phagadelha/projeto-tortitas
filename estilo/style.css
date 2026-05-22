@@ -77,19 +77,20 @@ h1,
 h2,
 h3,
 .brand-name {
-  font-family: "Salve Narrow";
+  font-family: "TT Bluescreens";
   font-weight: 400;
   line-height: 0.95;
 }
 
 h1 {
   max-width: 13ch;
-  font-size: clamp(2.6rem, 8vw, 5.5rem);
+  font-family: "TT Bluescreens", Georgia, serif;
+  font-size: clamp(2.0rem, 2.8vw, 3.0rem);
 }
 
 h2 {
   max-width: 13ch;
-  font-size: clamp(3.8rem, 5.8vw, 5.2rem);
+  font-size: clamp(2.0rem, 2.8vw, 3.0rem);
 }
 
 h3 {
@@ -137,6 +138,7 @@ h3 {
 }
 
 .brand-name {
+  font-family: "Salve Narrow";
   font-size: 2.15rem;
   line-height: 1;
 }
@@ -198,7 +200,7 @@ h3 {
 .eyebrow,
 .card-meta,
 .contact-label {
-  font-size: 0.78rem;
+  font-size: 0.6rem;
   font-weight: 700;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -213,14 +215,15 @@ h3 {
   padding: 0.8rem 1.3rem;
   border: 1px solid var(--ink);
   border-radius: var(--radius);
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 0.9rem;
   transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
 }
 
 .button:hover,
 .button:focus-visible {
   transform: translateY(-2px);
-  box-shadow: 0 12px 24px rgba(64, 48, 1, 0.12);
+  box-shadow: 0 10px 12px rgba(64, 48, 1, 0.12);
 }
 
 .button-primary {
@@ -245,8 +248,8 @@ h3 {
   grid-template-columns: minmax(0, 1fr) minmax(300px, 0.92fr);
   align-items: center;
   gap: clamp(2.5rem, 7vw, 5.8rem);
-  padding-top: clamp(4rem, 8vw, 7rem);
-  padding-bottom: clamp(4.5rem, 8vw, 7rem);
+  padding-top: clamp(1.5rem, 3vw, 2.0rem);
+  padding-bottom: clamp(4.5rem, 6vw, 5rem);
 }
 
 .hero-content,
@@ -271,13 +274,13 @@ h3 {
 
 .hero h1 {
   max-width: 12ch;
-  font-size: clamp(2.6rem, 7.4vw, 3.8rem);
+  font-size: clamp(2.0rem, 7.4vw, 2.3rem);
   font-family: "TT Bluescreens";
 }
 
 .hero-text {
   max-width: 32rem;
-  font-size: clamp(1.08rem, 1.8vw, 1.22rem);
+  font-size: clamp(0.8rem, 1.8vw, 1.0rem);
   line-height: 1.75;
 }
 
@@ -350,7 +353,7 @@ h3 {
   background: linear-gradient(135deg, var(--cream), var(--butter) 52%, var(--sun));
   border: 1px solid rgba(64, 48, 1, 0.22);
   border-radius: 999px;
-  font-family: "Salve Narrow";
+  font-family: "Salve Narrow", cursive;
   font-size: clamp(1.45rem, 2.8vw, 2.35rem);
   line-height: 0.95;
   text-align: center;
@@ -427,6 +430,13 @@ h3 {
   border-radius: var(--radius);
   background: var(--cream);
   box-shadow: 0 16px 34px rgba(64, 48, 1, 0.07);
+}
+
+.recipe-card h3 {
+  font-family: "Salve Narrow", serif;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  line-height: 0.92;
+  letter-spacing: 0.01em;
 }
 
 .card-image {
@@ -670,8 +680,9 @@ h3 {
 }
 
 .editorial-recipe-content h2 {
-  max-width: 9ch;
-  font-size: clamp(2.8rem, 5vw, 4.6rem);
+  font-family: "Salve Narrow", serif;
+  max-width: 10ch;
+  font-size: clamp(0.8rem, 5vw, 4.6rem);
 }
 
 .editorial-recipe-content h2 a {
@@ -943,6 +954,7 @@ h3 {
   h1,
   h2 {
     max-width: 11ch;
+
   }
 
   .button {
