@@ -402,6 +402,12 @@ h3 {
   max-width: 42rem;
   font-size: clamp(1rem, 1.5vw, 1.12rem);
 }
+#recipe-title {
+  font-family: "Salve Narrow", serif;
+  font-size: clamp(3.5rem, 7vw, 6rem);
+  line-height: 0.9;
+  letter-spacing: 0.02em;
+}
 
 .recipes {
   width: 100%;
@@ -456,6 +462,11 @@ h3 {
   object-position: center;
 }
 
+.card-image img.card-image-contain {
+  object-fit: contain;
+  background: var(--butter);
+}
+
 .card-content {
   flex: 1;
   display: flex;
@@ -466,6 +477,16 @@ h3 {
 
 .card-content p:not(.card-meta) {
   font-size: 0.98rem;
+}
+
+.card-content h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-content h3 a:hover,
+.card-content h3 a:focus-visible {
+  color: inherit;
 }
 
 .card-meta {
@@ -553,6 +574,36 @@ h3 {
   font-weight: 700;
 }
 
+.tips.section {
+  padding-top: 2rem;
+}
+
+.tips .section-heading {
+  margin-bottom: 1.1rem;
+}
+
+.tips .section-heading-centered {
+  gap: 0.35rem;
+}
+
+.tips .section-heading-centered h2 {
+  max-width: none;
+  white-space: nowrap;
+  font-size: clamp(2.1rem, 3.2vw, 2.8rem);
+  line-height: 0.95;
+}
+
+.tip-item h3 {
+  font-size: clamp(2.5rem, 3vw, 5rem);
+  font-family: "Salve Narrow", serif;
+  line-height: 1;
+}
+
+.tip-item p {
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -609,8 +660,8 @@ h3 {
   display: grid;
   justify-items: center;
   gap: 1.1rem;
-  padding-top: clamp(4rem, 8vw, 7rem);
-  padding-bottom: clamp(3rem, 6vw, 4.5rem);
+  padding-top: clamp(2.8rem, 5.5vw, 4.8rem);
+  padding-bottom: clamp(2.2rem, 4.5vw, 3.5rem);
   text-align: center;
 }
 
@@ -681,8 +732,8 @@ h3 {
 
 .editorial-recipe-content h2 {
   font-family: "Salve Narrow", serif;
-  max-width: 10ch;
-  font-size: clamp(0.8rem, 5vw, 4.6rem);
+  max-width: 12ch;
+  font-size: clamp(0.8rem, 5vw, 3.6rem);
 }
 
 .editorial-recipe-content h2 a {
@@ -710,11 +761,11 @@ h3 {
 
 .recipe-detail-hero {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(300px, 0.86fr);
+  grid-template-columns: minmax(0, 0.92fr) minmax(280px, 0.76fr);
   align-items: center;
-  gap: clamp(2rem, 6vw, 5rem);
-  padding-top: clamp(4rem, 8vw, 7rem);
-  padding-bottom: clamp(3rem, 6vw, 5rem);
+  gap: clamp(2rem, 5vw, 4.2rem);
+  padding-top: clamp(2.8rem, 6vw, 5rem);
+  padding-bottom: clamp(2.4rem, 5vw, 4rem);
 }
 
 .recipe-detail-copy {
@@ -723,7 +774,8 @@ h3 {
 }
 
 .recipe-detail-copy h1 {
-  max-width: 8ch;
+  max-width: 9.5ch;
+  font-size: clamp(2.9rem, 6vw, 5.5rem);
 }
 
 .recipe-detail-copy p:not(.eyebrow) {
@@ -739,13 +791,13 @@ h3 {
 
 .recipe-detail-image {
   display: flex;
-  min-height: clamp(360px, 48vw, 560px);
+  min-height: clamp(300px, 40vw, 470px);
   margin: 0;
   overflow: hidden;
   border: 1px solid rgba(64, 48, 1, 0.16);
-  border-radius: 999px 999px 12px 12px;
+  border-radius: 220px 220px 10px 10px;
   background: var(--butter);
-  box-shadow: 0 24px 54px rgba(64, 48, 1, 0.11);
+  box-shadow: 0 20px 44px rgba(64, 48, 1, 0.1);
 }
 
 .recipe-detail-image img {
@@ -773,7 +825,7 @@ h3 {
 
 .recipe-overview h2 {
   max-width: none;
-  font-size: clamp(2rem, 3.2vw, 3rem);
+  font-size: clamp(1.65rem, 2.5vw, 2.35rem);
 }
 
 .recipe-section {
@@ -789,12 +841,13 @@ h3 {
 }
 
 .recipe-section-heading h2 {
-  max-width: 12ch;
+  max-width: 16ch;
+  font-size: clamp(2.45rem, 4.7vw, 4.35rem);
 }
 
 .recipe-block-grid {
   display: grid;
-  grid-template-columns: minmax(220px, 0.55fr) minmax(0, 1fr);
+  grid-template-columns: minmax(220px, 0.5fr) minmax(0, 1.08fr);
   gap: 1rem;
   align-items: stretch;
 }
@@ -808,7 +861,24 @@ h3 {
 
 .recipe-panel h3 {
   margin-bottom: 0.8rem;
-  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+  font-size: clamp(1.55rem, 2.25vw, 2.05rem);
+}
+
+.strawberry-title {
+  display: grid;
+  justify-items: center;
+  width: fit-content;
+  max-width: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.strawberry-title span {
+  display: block;
+}
+
+.strawberry-title span:nth-child(2) {
+  transform: translateX(0.12em);
 }
 
 .recipe-panel ul,
@@ -912,7 +982,8 @@ h3 {
   }
 
   .recipe-detail-image {
-    min-height: 320px;
+    min-height: 280px;
+    border-radius: 180px 180px 10px 10px;
   }
 }
 
@@ -989,5 +1060,11 @@ h3 {
   .site-footer {
     align-items: flex-start;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .tips .section-heading-centered h2 {
+    white-space: normal;
   }
 }
