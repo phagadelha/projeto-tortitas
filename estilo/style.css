@@ -45,6 +45,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 110px;
 }
 
 body {
@@ -195,6 +196,7 @@ h3 {
   width: min(calc(100% - 2rem), var(--max-width));
   margin: 0 auto;
   padding: var(--section-space) 0;
+  scroll-margin-top: 110px;
 }
 
 .eyebrow,
@@ -248,7 +250,7 @@ h3 {
   grid-template-columns: minmax(0, 1fr) minmax(300px, 0.92fr);
   align-items: center;
   gap: clamp(2.5rem, 7vw, 5.8rem);
-  padding-top: clamp(1.5rem, 3vw, 2.0rem);
+  padding-top: clamp(2.3rem, 4vw, 3rem);
   padding-bottom: clamp(4.5rem, 6vw, 5rem);
 }
 
@@ -988,6 +990,14 @@ h3 {
 }
 
 @media (max-width: 640px) {
+  html {
+    scroll-padding-top: 150px;
+  }
+
+  .section {
+    scroll-margin-top: 150px;
+  }
+
   .navbar {
     min-height: auto;
     padding: 0.95rem 0 1rem;
@@ -1026,6 +1036,20 @@ h3 {
   h2 {
     max-width: 11ch;
 
+  }
+
+  .hero-content {
+    justify-items: center;
+    text-align: center;
+  }
+
+  .hero .eyebrow,
+  .hero-text {
+    margin-inline: auto;
+  }
+
+  .hero h1 {
+    max-width: 9.8ch;
   }
 
   .button {
