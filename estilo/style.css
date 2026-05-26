@@ -464,9 +464,9 @@ h3 {
   object-position: center;
 }
 
-.card-image img.card-image-contain {
-  object-fit: contain;
-  background: var(--butter);
+.card-image img.card-image-morango {
+  object-fit: cover;
+  object-position: center 58%;
 }
 
 .card-content {
@@ -607,22 +607,40 @@ h3 {
 }
 
 .gallery-grid {
+  max-width: 920px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 180px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-flow: dense;
   gap: 1rem;
+  margin-inline: auto;
 }
 
 .gallery-item {
+  aspect-ratio: 1 / 1;
   min-height: auto;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(64, 48, 1, 0.2);
+  border-radius: var(--radius);
+  background: var(--butter);
 }
 
-.gallery-item-tall {
-  grid-row: span 2;
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
 }
 
-.gallery-item-wide {
+.gallery-item img.gallery-image-contain {
+  object-fit: contain;
+  background: var(--butter);
+}
+
+.gallery-item-feature {
   grid-column: span 2;
+  grid-row: span 2;
 }
 
 .contact {
@@ -1072,11 +1090,9 @@ h3 {
 
   .gallery-grid {
     grid-template-columns: 1fr;
-    grid-auto-rows: 220px;
   }
 
-  .gallery-item-tall,
-  .gallery-item-wide {
+  .gallery-item-feature {
     grid-column: auto;
     grid-row: auto;
   }
